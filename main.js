@@ -4,5 +4,6 @@ var app = new Vue({
   image:'./assets/socks-green.jpeg',
   altText:'A pair of socks',
   description: 'A pair of warm, fuzzy socks',
-  inStock: true
+  inStock: true,
+  details: ["80% cotton", "20% polyester", "Gender Neutral"]
 })
