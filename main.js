@@ -1,5 +1,6 @@
 var app = new Vue({
   el: '#app',
+  data: {
   product: 'Socks',
   image:'./assets/socks-green.jpeg',
   description: 'A pair of warm, fuzzy socks',
@@ -15,4 +16,5 @@ var app = new Vue({
       variantColor: "blue"
     }
   ]
+  }
 })
