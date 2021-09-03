@@ -3,7 +3,7 @@ var app = new Vue({
   data: {
     brand:'Vue Mastery',
     product: 'Socks',
-    image:'./assets/socks-green.jpeg',
+    selectedVariant: 0,
     inStock: true,
     details: ["80% cotton", "20% polyester", "Gender Neutral"],
     variants: [
