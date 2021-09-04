@@ -31,6 +31,9 @@ var app = new Vue({
   computed: {
     title() {
       return this.brand + ' ' + this.product
+    },
+    image() {
+      return this.variants[this.selectedVariant].variantImage
     }
   }
 })
