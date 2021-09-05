@@ -43,3 +43,11 @@ var app = new Vue({
     }
   }
 })
+
+vue.component('product',{
+  template:`
+    <div class="product">
+      ...
+    </div>
+  `
+})
