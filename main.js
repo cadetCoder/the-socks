@@ -33,11 +33,7 @@ vue.component('product',{
   </div>
   </div>
   `
-})
-
-var app = new Vue({
-  el: '#app',
-  data: {
+  data() {
     brand:'Vue Mastery',
     product: 'Socks',
     selectedVariant: 0,
@@ -57,7 +53,7 @@ var app = new Vue({
         variantQuantity: 0
       }
     ],
-  cart: 0
+    cart: 0
   },
   methods: {
     addToCart() {
@@ -79,4 +75,8 @@ var app = new Vue({
       return this.variants[this.selectedVariant].variantQuantity
     }
   }
+})
+
+var app = new Vue({
+  el: '#app'
 })
