@@ -1,4 +1,4 @@
-vue.component('product',{
+vue.component('product', {
   template:`
     <div class="product">
     <div class="product-image">
