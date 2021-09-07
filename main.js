@@ -32,14 +32,15 @@ vue.component('product',{
 
   </div>
   </div>
-  `
+  `,
   data() {
-    brand:'Vue Mastery',
-    product: 'Socks',
-    selectedVariant: 0,
-    inStock: true,
-    details: ["80% cotton", "20% polyester", "Gender Neutral"],
-    variants: [
+    return {
+      brand:'Vue Mastery',
+      product: 'Socks',
+      selectedVariant: 0,
+      inStock: true,
+      details: ["80% cotton", "20% polyester", "Gender Neutral"],
+      variants: [
       {
         variantId: 2234,
         variantColor: "green",
@@ -54,6 +55,7 @@ vue.component('product',{
       }
     ],
     cart: 0
+    }
   },
   methods: {
     addToCart() {
