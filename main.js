@@ -61,8 +61,7 @@ Vue.component('product', {
         variantImage: "./assets/socks-blue.jpeg",
         variantQuantity: 0
       }
-    ],
-    cart: 0
+    ]
     }
   },
   methods: {
@@ -96,6 +95,7 @@ Vue.component('product', {
 var app = new Vue({
   el: '#app',
   data: {
-    premium: false
+    premium: true,
+    cart: 0
   }
 })
