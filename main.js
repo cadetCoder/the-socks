@@ -34,10 +34,6 @@ Vue.component('product', {
             :disabled="!inStock"
             :class="{ disabledButton: !inStock }">Add to Cart</button>
 
-    <div class="cart">
-      <p>Cart ({{ cart }})</p>
-    </div>
-
   </div>
   </div>
   `,
