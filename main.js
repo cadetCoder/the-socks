@@ -32,9 +32,14 @@ Vue.component('product', {
 
     <button v-on:click="addToCart"
             :disabled="!inStock"
-            :class="{ disabledButton: !inStock }">Add to Cart</button>
+            :class="{ disabledButton: !inStock }">
+              Add to Cart
+            </button>
 
   </div>
+
+  <product-review></product-review>
+
   </div>
   `,
   data() {
