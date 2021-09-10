@@ -38,7 +38,7 @@ Vue.component('product', {
 
   </div>
 
-  <product-review></product-review>
+  <product-review @review-submitted="addReview>"</product-review>
 
   </div>
   `,
@@ -62,7 +62,8 @@ Vue.component('product', {
         variantImage: "./assets/socks-blue.jpeg",
         variantQuantity: 0
       }
-    ]
+    ],
+    reviews: []
     }
   },
   methods: {
@@ -72,6 +73,9 @@ Vue.component('product', {
     updateProduct(index) {
       this.selectedVariant = index
       console.log(index)
+    },
+    addReview(productReview) {
+      this.reviews.push(productReview)
     }
   },
   computed: {
