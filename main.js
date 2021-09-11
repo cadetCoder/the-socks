@@ -149,15 +149,20 @@ Vue.component('product-review', {
   },
   methods: {
     onSubmit() {
-      let productReview = {
-        name: this.name,
-        review: this.review,
-        rating: this.rating
+      if (this.name && this.review && this.rating) {
+        let productReview = {
+          name: this.name,
+          review: this.review,
+          rating: this.rating
+        }
+        this.$emit('review-sibmit'. productReview)
+        this.name = null,
+        this.review = null,
+        this.rating = null
       }
-      this.$emit('review-sibmit'. productReview)
-      this.name = null,
-      this.review = null,
-      this.rating = null
+      else {
+        if (!this.name) this.errors.push("Name required.")
+      }
     }
   },
 })
