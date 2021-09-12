@@ -167,7 +167,7 @@ Vue.component('product-review', {
         this.name = null,
         this.review = null,
         this.rating = null
-      }
+      
       else {
         if (!this.name) this.errors.push("Name required.")
         if (!this.review) this.errors.push("Review required.")
