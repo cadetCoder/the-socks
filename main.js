@@ -179,8 +179,15 @@ Vue.component('product-review', {
 
 Vue.component('product-tabs', {
   template:`
-    <div></div>
-  `
+    <div>
+      <span class="tab"></span>
+    </div>
+  `,
+  data() {
+    return {
+      tabs: ['Reviews', 'Make A review']
+    }
+  }
 })
 
 var app = new Vue({
