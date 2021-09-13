@@ -182,7 +182,8 @@ Vue.component('product-tabs', {
     <div>
       <span class="tab"
             v-for="(tab, index) in tabs" :key="index">
-            {{ tab }}</span>
+            {{ tab }}
+      </span>
     </div>
   `,
   data() {
