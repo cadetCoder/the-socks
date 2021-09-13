@@ -38,6 +38,8 @@ Vue.component('product', {
 
   </div>
 
+    <product-tabs></product-tabs>
+
     <div>
       <h2>Reviews</h2>
       <p v-if="!reviews.length">There are no reviews yet.</p>
