@@ -93,6 +93,11 @@ Vue.component('product', {
       }
       return 3.99
     }
+  },
+  mounted() {
+    eventBus.$on('review-submitted', productReview => {
+      this.reviews.push(productReview)
+    })
   }
 })
 
@@ -150,7 +155,7 @@ Vue.component('product-review', {
           review: this.review,
           rating: this.rating
         }
-        eventBus.$emit('review-submitted',productReview)
+        eventBus.$emit('review-submitted', productReview)
         this.name = null,
         this.review = null,
         this.rating = null
