@@ -91,7 +91,7 @@ Vue.component('product', {
       if (this.premium) {
         return "Free"
       }
-      return 3.99
+        return 3.99
     }
   },
   mounted() {
@@ -198,7 +198,8 @@ Vue.component('product-tabs', {
       </ul>
     </div>
 
-  <product-review v-show="selectedTab === 'Make a Review'"></product-review>
+  <product-review v-show="selectedTab === 'Make a Review' ">
+  </product-review>
 
     </div>
   `,
