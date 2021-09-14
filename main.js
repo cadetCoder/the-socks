@@ -75,9 +75,6 @@ Vue.component('product', {
     updateProduct(index) {
       this.selectedVariant = index
       console.log(index)
-    },
-    addReview(productReview) {
-      this.reviews.push(productReview)
     }
   },
   computed: {
@@ -153,7 +150,7 @@ Vue.component('product-review', {
           review: this.review,
           rating: this.rating
         }
-        this.$emit('review-submitted',productReview)
+        eventBus.$emit('review-submitted',productReview)
         this.name = null,
         this.review = null,
         this.rating = null
