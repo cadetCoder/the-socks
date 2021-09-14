@@ -1,3 +1,5 @@
+var eventBus = new Vue()
+
 Vue.component('product', {
   props: {
     premium: {
