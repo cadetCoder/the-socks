@@ -187,7 +187,6 @@ Vue.component('product-tabs', {
       </span>
 
       <div v-show="selectedTab === 'Reviews'">
-      <h2>Reviews</h2>
       <p v-if="!reviews.length">There are no reviews yet.</p>
       <ul>
         <li v-for="review in reviews">
@@ -197,9 +196,8 @@ Vue.component('product-tabs', {
         </li>
       </ul>
     </div>
-
-  <product-review v-show="selectedTab === 'Make a Review' ">
-  </product-review>
+      
+      <product-review v-show="selectedTab === 'Make a Review'"></product-review>
 
     </div>
   `,
