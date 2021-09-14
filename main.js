@@ -166,6 +166,12 @@ Vue.component('product-review', {
 })
 
 Vue.component('product-tabs', {
+  props: {
+    reviews: {
+      type: Array,
+      required: true
+    }
+  },
   template:`
     <div>
       <span class="tab"
@@ -176,7 +182,7 @@ Vue.component('product-tabs', {
             {{ tab }}
       </span>
 
-      <div>
+      <div v-show="selectedTab === 'Reviews'">
       <h2>Reviews</h2>
       <p v-if="!reviews.length">There are no reviews yet.</p>
       <ul>
@@ -188,7 +194,7 @@ Vue.component('product-tabs', {
       </ul>
     </div>
 
-  <product-review @review-submitted="addReview"></product-review>
+  <product-review v-show="selectedTab === 'Make a Review'"></product-review>
 
     </div>
   `,
