@@ -40,7 +40,7 @@ Vue.component('product', {
 
   </div>
 
-    <product-tabs :review="reviews"></product-tabs>
+    <product-tabs :reviews="reviews"></product-tabs>
 
   </div>
   `,
