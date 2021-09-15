@@ -187,17 +187,18 @@ Vue.component('product-tabs', {
       </span>
 
       <div v-show="selectedTab === 'Reviews'">
-      <p v-if="!reviews.length">There are no reviews yet.</p>
-      <ul>
-        <li v-for="review in reviews">
-        <p>{{ review.name }}</p>
-        <p>Rating: {{ review.rating }}</p>
-        <p>{{ review.review }}</p>
-        </li>
-      </ul>
-    </div>
+        <p v-if="!reviews.length">There are no reviews yet.</p>
+          <ul>
+            <li v-for="review in reviews">
+            <p>{{ review.name }}</p>
+            <p>Rating: {{ review.rating }}</p>
+            <p>{{ review.review }}</p>
+            </li>
+          </ul>
+      </div>
       
-      <product-review v-show="selectedTab === 'Make a Review'"></product-review>
+      <product-review v-show="selectedTab === 'Make a Review'">
+      </product-review>
 
     </div>
   `,
