@@ -190,9 +190,9 @@ Vue.component('product-tabs', {
         <p v-if="!reviews.length">There are no reviews yet.</p>
           <ul>
             <li v-for="review in reviews">
-            <p>{{ review.name }}</p>
-            <p>Rating: {{ review.rating }}</p>
-            <p>{{ review.review }}</p>
+              <p>{{ review.name }}</p>
+              <p>Rating: {{ review.rating }}</p>
+              <p>{{ review.review }}</p>
             </li>
           </ul>
       </div>
