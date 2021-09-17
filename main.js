@@ -53,7 +53,7 @@ Vue.component('product', {
                 {
                     variantId: 2235,
                     variantColor: 'blue',
-                    variantImage: './assets/vmSocks-blue.jpg',
+                    variantImage: './assets/socks-blue.jpeg',
                     variantQuantity: 0
                 }
             ],
